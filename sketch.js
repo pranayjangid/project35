@@ -1,7 +1,7 @@
 var balloon, background;
 function preload() {
-  backgroundImg = loadImage("images/1.png")
-  balloonImage = loadAnimation("images/2.png", "images/3.png", "images/4.png");
+  backgroundImage = loadImage("images/1.png");  
+  balloonImage = loadAnimation("images/2.png","images/3.png","images/4.png");
 }
 
 function setup(){
@@ -18,7 +18,7 @@ balloon = createSprite (100,400, 20, 20)
 
 function draw(){
 
-    background(backgroundImg);
+    background(backgroundImage);
   
         if(keyDown(LEFT_ARROW)){
             balloon.x = balloon.x - 10;
